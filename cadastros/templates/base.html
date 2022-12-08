@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
 
@@ -10,16 +10,121 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Link dos icones -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
-        <div class="alert alert-dark" role="alert" style="text-align:center"><h1>Bem-vindo a <b>Fábrica de Talentos</b></h1></div>
-        <div class="alert alert-light" role="alert" style="text-align:center"><h5><b>Conheça nossos alunos!</b></h5></div>
+<!-- Cabeçalho -->
+<div class="container">
+    <div class="alert alert-dark" role="alert"><h1>Bem-vindo a <b>Fábrica de Talentos</b></h1></div>
+    <div class="alert alert-light" role="alert" style="text-align:center"><h5><b>Conheça nossos alunos!</b></h5></div>
 
-        {% block conteudo %}
+    {% block conteudo %}
 
-        {% endblock %}
+    {% endblock %}
+</div>
+
+<!-- Mostrando as Fabricas de Talento existentes -->
+<div id="tabela" style="columns: 3">
+    <div class="card">
+        <img src="https://images.sympla.com.br/6283fb507c11f-xs.png" class="card-img-top" alt="imagem Fab. CIDC">
+
+        <div class="card-body">
+            <h4 class="card-title"><b>Fabrica de Talentos CIDC</b></h4>
+            <p class="card-text">O programa Fábrica de Talentos realizado em parceria entre Inatel e Huawei alcançou 1.500 horas de treinamento
+                realizadas para alunos do ensino superior e do ensino técnico de Santa Rita do Sapucaí-MG. Em quase dois anos de atividades 311
+                alunos participaram dos cursos e ações do programa.
+            </p>
+            <a href="#" class="btn btn-primary">Inscrever-se</a>
+        </div>
     </div>
+
+    <div class="card">
+        <img src="https://images.sympla.com.br/6283fb507c11f-xs.png" class="card-img-top" alt="imagem Fab. DEV">
+
+        <div class="card-body">
+            <h4 class="card-title"><b>Fabrica de Talentos DEV</b></h4>
+            <p class="card-text">O programa Fábrica de Talentos DEV realizado em parceria entre Inatel e Huawei alcançou 1.500 horas de treinamento
+                realizadas para alunos do ensino superior e do ensino técnico de Santa Rita do Sapucaí-MG. Em quase dois anos de atividades 311
+                alunos participaram dos cursos e ações do programa.
+            </p>
+            <a href="#" class="btn btn-primary">Inscrever-se</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.sympla.com.br/6283fb507c11f-xs.png" class="card-img-top" alt="imagem Fab. BRDC">
+
+        <div class="card-body">
+            <h4 class="card-title"><b>Fabrica de Talentos BRDC</b></h4>
+            <p class="card-text">O programa Fábrica de Talentos BRDC realizado em parceria entre Inatel e Huawei alcançou 1.500 horas de treinamento
+                realizadas para alunos do ensino superior e do ensino técnico de Santa Rita do Sapucaí-MG. Em quase dois anos de atividades 311
+                alunos participaram dos cursos e ações do programa.
+            </p>
+            <a href="#" class="btn btn-primary">Inscrever-se</a>
+        </div>
+    </div>
+</div>
+
+<!-- Historia Huawei -->
+<hr>
+<div><h1>Parceria entre Inatel e Huawei chega a 1.500 horas de treinamento para alunos por meio do Programa Fábrica de Talentos</h1></div>
+<br>
+
+<div id="texto-lado-imagem">
+    <img src="https://www.inatel.br/imprensa/images/Inatel_F%C3%A1brica_de_Talentos_ETE_Inatel_julho2019_14.JPG" alt="Inatel Fábrica de Talentos ETE Inatel julho2019 14" width="550" height="320" style="margin-left: 7%; margin-right: 20px; margin-bottom: 20px; float: left;">
+    <p style="margin: 7%; margin-top: 0; margin-bottom: 1%;">O programa Fábrica de Talentos realizado em parceria entre Inatel e Huawei alcançou 1.500 horas de
+        treinamento realizadas para alunos do ensino superior e do ensino técnico de Santa Rita do Sapucaí-MG. Em quase dois anos de atividades
+        311 alunos participaram dos cursos e ações do programa.
+        <br><br>
+        Neste ano, a Fábrica de Talentos, além de beneficiar os alunos do Inatel, também integrou 45 alunos do ensino médio técnico da ETE FMC.
+        As atividades e aulas realizadas nos laboratórios e salas de aula do Inatel proporcionam aos participantes uma melhor vivência do que é
+        realizado pelos profissionais no mercado de trabalho. As aulas da primeira turma desta parceria foram encerradas no final do mês de julho.
+        Os alunos, além de receberem os certificados no final das atividades também realizaram uma visita aos laboratórios da multinacional Huawei
+        localizados no campus do Inatel.
+        <br><br>
+        “Foi uma experiência incrível e que me surpreendeu muito. Foram duas semanas de aprendizado na área de telecomunicações e de prestação de
+        serviços. Os materiais eram excelentes e os professores excepcionais. É uma experiência que recomendo para todos que tiverem a oportunidade
+        e parabenizo a instituição pela iniciativa. Esse projeto abriu os meus olhos para o ambiente de trabalho e para as diversas áreas de atuação
+        de uma empresa e me fez conhecer várias áreas de interesse que eu não conhecia, expandindo meu conhecimento sobre a atuação de um engenheiro.
+        Tudo isso me deu um norte de como guiar minha carreira. Parabéns a todos os envolvidos”, comentou o aluno da ETE-FMC que participou do
+        programa nesta primeira parceria entre Inatel, ETE FMC e Huawei, Matheus Henrique Braga Julidori.
+        <br><br>
+        Para a engenheira e especialista do Competence & Innovation Development Center- CIDC do Inatel, Carolina Dionísio Leão Barroso, esta nova
+        parceria com a ETE FMC é importante, pois fortalece ainda mais o vínculo entre as duas instituições. Além disso, segundo ela, é possível
+        proporcionar aos alunos que estão na fase final da formação técnica uma complementação teórica e uma experiência prática daquilo que será
+        vivenciado no mercado de trabalho.
+        <br><br>
+        Com os alunos do ensino técnico o Programa Fábrica de Talentos abordou em sala de aula conceitos teóricos e práticos sobre as Redes Móveis
+        e cursos de ferramentas como Excel e Autocad. “Apoiamos a iniciativa e incentivamos fortemente a participação dos nossos alunos no programa,
+        pois acreditamos ser esta uma excelente oportunidade de aprendizagem que contribui para a Formação Integral, uma premissa da ETE FMC.
+        Enxergamos que o programa como um todo é capaz de desenvolver nos participantes competências e habilidades técnicas e comportamentais. Os
+        estudantes esperam animados pelas próximas etapas,” finaliza o Prof. Eduardo Abranches, Coordenador do Ensino Técnico da ETE FMC.
+        <br><br>
+        <b>Inatel e Huawei</b>
+        <br><br>
+        A parceria de sucesso entre o Inatel e a Huawei completa dezesseis produtivos anos de conhecimento compartilhado e de tecnologias
+        desenvolvidas. O Inatel foi o primeiro credenciado nacional a treinar profissionais na certificação HANA – Huawei Authorized Network
+        Academy, depois as duas empresas lançaram, em maio de 2017, o Fábrica de Talentos, um programa exclusivo para o Inatel, coordenado pelo
+        CIDC.
+        <br><br>
+        “Os resultados da Fábrica de Talentos fazem parte da missão da Huawei em ser parceira na transformação digital de seus clientes e parceiros
+        e de estar no Brasil para o Brasil, entendendo suas particularidades e se adaptando a elas para construir um futuro ainda mais conectado.
+        Eu, como ex-aluno do Inatel e atualmente na Huawei, sinto muito orgulho desta iniciativa e seus resultados tão duradouros”, afirmou Breno
+        Santos, diretor de serviços da Huawei do Brasil.
+    </p>
+</div>
+
+<!-- Rodapé da pagina -->
+<footer>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2022 Company, Inc</p>
+</footer>
 </body>
 </html>
