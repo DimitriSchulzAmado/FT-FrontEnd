@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <a class="btn btn-primary" href="{% url 'aluno-create' %}">
+        <span class="glyphicon glyphicon-plus"></span> Cadastrar novo aluno</a>
+    <h1>Alunos cadastradas:</h1>
+
+    <ul class="list-group">
+
+        {% for aluno in aluno %}
+        <a class="list-group-item list-group-item-action" href="{% url 'aluno-detail' aluno.id %}" >{{ aluno.nome }}</a>
+        {% endfor %}
+
+    </ul>
+{% endblock %}
+
+
